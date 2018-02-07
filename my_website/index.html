@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  
+  <style>
+        video {
+            position:relative;
+            min-width:83%;
+            min-height:70%;
+            width:auto;
+            height:auto;
+            z-index:1;
+            
+        }
+        body {
+            background-color:black;
+        }
+        p {
+            z-index:3;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .important_text {
+            text-shadow:
+            -2px -2px 0 #000,
+	    	2px -2px 0 #000,
+	    	-2px 2px 0 #000,
+	    	2px 2px 0 #000;
+        }
+        .important_text_alt {
+            text-shadow:teal;
+        }
+  </style>
+  
+  <body>
+    <center><a color="white" href="index.html"><font size="6">Home</font></a>
+    <a color="white" href="about.html"><font size="6">About Me</font></a>
+    <a color="white" href="portfolio.html"><font size="6">Portfolio</font></a>
+    <a color="white" href="resume.html"><font size="6">Resume</font></a>
+    <a color="white" href="tipsntricks.html"><font size="6">Coding Tips/Tricks</font></a></center>
+
+        <center><video class="video" mute="" loop="" autoplay="">
+            <source src="/my_website/Videos/Timelapse%20Capture.mp4" type="video/mp4">
+            <source src="/my_website/Videos/Timelapse%20Capture.webm" type="video/webm">
+            <source src="/my_website/Videos/Timelapse%20Capture.ogg" type="video/ogg">
+        </video></center>
+        
+       <script>
+ (function() {
+   /**
+   * Video element
+   * @type {HTMLElement}
+   */
+  var video = document.getElementById("my-video");
+
+  /**
+   * Check if video can play, and play it
+   */
+  video.addEventListener( "canplay", function() {
+    video.play();
+  });
+})();
+</script>
+
+    <center><p><span class="important_text"><font size=10 color="white">Welcome</span></p></center>
+  </body>
+</html>
